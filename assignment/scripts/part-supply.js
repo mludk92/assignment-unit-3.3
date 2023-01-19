@@ -17,11 +17,11 @@ console.log('3. Second supplyChange is:',supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
-supplyChanges.pop()
+supplyChanges.pop();
 console.log('4. Removed item:',supplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
-supplyChanges.push(25)
+supplyChanges.push(25);
 console.log('5. Adding 25 to supplyChanges.',supplyChanges);
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
@@ -48,3 +48,46 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+//note loop from previous assingment strech goal. 
+
+let color = ['yellow','orange','green'];
+console.log(color);
+// expected is a string yellow and orange and green 
+
+let colorText = ''
+let colorIndex = 0
+
+for(let i = 0; i < color.length; i++) {
+    console.log(color[i]);
+    if (i === color.length -1){
+        colorText += `${color[i]}`; 
+    }
+    else {
+        colorText += `${color[i]} and `; //use a template literal = colorText += color[i] + ' and ';
+}}
+console.log(colorText);
+
+//same with for of 
+for(let clr of color){
+    if(colorIndex === color.length -1){
+        colorText += color}
+    else {
+        colorText += color + ' and '} 
+    colorIndex ++;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+//while loop notes 
+
+let food = ['salad','pizza','chicken']
+
+let max = food.length;
+let start = 0
+
+while(start < max) {
+    console.log(food[start]);
+    start += 1 //avoids while loop 
+}

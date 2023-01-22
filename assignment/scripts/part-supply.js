@@ -92,7 +92,7 @@ while(extra > 0){
     console.log(extra, box)
     
 }
-console.log('a total of',box,"box's were filled and there are ", extra * -1," remaining items")
+console.log('a total of',box,"box's were filled and there are", extra * -1,"remaining items which were not packed")
 console.log('9. Filling boxes with a "while" loop');
 
 /////////////////////////////////////////////////////////////////////////////////////

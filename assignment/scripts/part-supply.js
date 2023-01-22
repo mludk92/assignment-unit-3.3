@@ -82,6 +82,17 @@ console.log('8. Total supplies available is:',total);
 //    Use a `while` loop to keep adding parts to boxes until
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
+
+let extra = 572
+let box = 0
+while(extra > 0){
+    console.log(extra, box)
+    extra -=7
+    box++
+    console.log(extra, box)
+    
+}
+console.log('a total of',box,"box's were filled and there are ", extra * -1," remaining items")
 console.log('9. Filling boxes with a "while" loop');
 
 /////////////////////////////////////////////////////////////////////////////////////
